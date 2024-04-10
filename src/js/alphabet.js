@@ -9,4 +9,4 @@ alphabet.forEach((el) => {
   alphabetKeys.append(key);
 });
 
-export { alphabet, alphabetKeys }
+export { alphabet, alphabetKeys };
