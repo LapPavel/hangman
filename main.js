@@ -28,15 +28,15 @@ wordBox.classList.add('words-box');
 const letterBox = document.createElement('div');
 letterBox.classList.add('letter-box');
 
-const helpText = document.createElement('h3');
-helpText.classList.add('help-text');
-helpText.textContent = 'Help: ';
-helpText.insertAdjacentHTML(
+const hintText = document.createElement('h3');
+hintText.classList.add('hint-text');
+hintText.textContent = 'Hint: ';
+hintText.insertAdjacentHTML(
   'beforeend',
   `<span>${wordList[gameIndex].hint}</span>`
 );
 
-wordBox.append(helpText, alphabetKeys);
+wordBox.append(hintText, alphabetKeys);
 
 appBody.prepend(letterBox, gallowsBox, wordBox);
 
