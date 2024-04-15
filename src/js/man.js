@@ -1,14 +1,16 @@
+const fillStyle = 'style="stroke: #000; stroke-width: 2; fill: #fff;"';
+
 function addHead(element) {
   element.insertAdjacentHTML(
     'beforeend',
-    '<circle cx="140" cy="70" r="20" style="stroke: #000; stroke-width: 2; fill: #fff;"></circle>'
+    `<circle cx="140" cy="70" r="20" ${fillStyle}></circle>`
   );
 }
 
 function addBody(element) {
   element.insertAdjacentHTML(
     'beforeend',
-    '<line x1="140" y1="90" x2="140" y2="150" style="stroke:#000; stroke-width:2"></line>'
+    `<line x1="140" y1="90" x2="140" y2="150" ${fillStyle}></line>`
   );
 }
 
@@ -17,7 +19,7 @@ function addArm(element, side) {
     'beforeend',
     `<line x1="140" y1="100" x2="${
       side === 'left' ? '120' : '160'
-    }" y2="130" style="stroke:#000; stroke-width:2"></line>`
+    }" y2="130" ${fillStyle}></line>`
   );
 }
 
@@ -26,7 +28,7 @@ function addLeg(element, side) {
     'beforeend',
     `<line x1="140" y1="150" x2="${
       side === 'left' ? '120' : '160'
-    }" y2="180" style="stroke:#000; stroke-width:2"></line>`
+    }" y2="180" ${fillStyle}></line>`
   );
 }
 

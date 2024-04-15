@@ -36,9 +36,9 @@ hintText.insertAdjacentHTML(
   `<span>${wordList[gameIndex].hint}</span>`
 );
 
-wordBox.append(hintText, alphabetKeys);
+wordBox.append(letterBox, hintText, alphabetKeys);
 
-appBody.prepend(letterBox, gallowsBox, wordBox);
+appBody.prepend(gallowsBox, wordBox);
 
 let numManParts = 0;
 document.querySelector('#man').addEventListener('click', () => {
