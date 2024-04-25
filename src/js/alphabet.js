@@ -1,4 +1,4 @@
-const alphabet = [...Array(26)].map((_, i) => String.fromCharCode(i + 65));
+const alphabet = [...Array(26)].map((_, i) => String.fromCharCode(i + 97));
 
 const alphabetKeys = document.createElement('div');
 alphabetKeys.classList.add('alphabet');
