@@ -61,7 +61,7 @@ function setListener(element) {
           letter.classList.contains('letter-box__letter_guessed')
         );
         if (hasWordGuessed) {
-          console.log('He-he!');
+          // console.log('He-he!');
           attempt = 6;
         }
       } else {
@@ -71,7 +71,7 @@ function setListener(element) {
         attempt += 1;
         updateAttempt();
         if (attempt === 6) {
-          console.log('Not he-he!');
+          // console.log('Not he-he!');
         }
       }
       event.target.setAttribute('disabled', '');
