@@ -36,7 +36,7 @@
 }
 
 .words-box {
-  max-width: 310px;
+  max-width: 375px;
 }
 
 .letters-box {
@@ -88,8 +88,8 @@
 }
 
 .alphabet__key {
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   padding: 0;
 
   &[disabled] {
