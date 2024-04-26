@@ -8,6 +8,7 @@ export default function showModal(isWon, word) {
   const modalVideo = document.createElement('video');
   modalVideo.classList.add('modal__video');
   modalVideo.setAttribute('src', `${isWon ? videoWon : videoLose}`);
+  modalVideo.setAttribute('playsinline', '');
   modalVideo.setAttribute('autoplay', '');
   modalVideo.setAttribute('loop', '');
 
