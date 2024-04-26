@@ -83,7 +83,7 @@
   font-weight: 600;
   border-radius: 4px;
   text-transform: uppercase;
-  background: #5E63BA;
+  background: #4493d9;
 }
 
 .alphabet__key {
@@ -137,7 +137,8 @@
 }
 
 @media (hover: hover) {
-  .alphabet__key:hover {
-    background: #8286c9;
+  .alphabet__key:hover,
+  .modal__button:hover {
+    background: #5ba6e0;
   }
 }

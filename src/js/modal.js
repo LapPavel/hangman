@@ -25,6 +25,7 @@ export default function showModal(isWon, word) {
   modalButton.addEventListener('click', () => {
     modalWindow.close();
     modalWindow.remove();
+    window.location.reload();
   });
 
   modalWindow.append(modalVideo, modalTitle, modalText, modalButton);
