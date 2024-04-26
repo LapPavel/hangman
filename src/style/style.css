@@ -21,7 +21,7 @@
   align-items: center;
   flex-wrap: wrap;
   column-gap: 30px;
-  min-height: 100vh;
+  min-height: 100svh;
   padding: 0 max(5px, calc(50vw - 640px));
 }
 
