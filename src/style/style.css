@@ -39,14 +39,14 @@
   max-width: 310px;
 }
 
-.letter-box {
+.letters-box {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 10px;
 }
 
-.letter-box__letter {
+.letters-box__letter {
   flex-basis: 28px;
   -webkit-text-security: square;
   font-size: 1.5rem;
@@ -74,7 +74,8 @@
   user-select: none;
 }
 
-.alphabet__key {
+.alphabet__key,
+.modal__button {
   color: #fff;
   border: none;
   cursor: pointer;
@@ -83,6 +84,9 @@
   border-radius: 4px;
   text-transform: uppercase;
   background: #5E63BA;
+}
+
+.alphabet__key {
   width: 30px;
   height: 30px;
 
@@ -92,9 +96,33 @@
   }
 }
 
-.card {
-  flex-basis: 100%;
+.modal {
+  padding: 30px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
   text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.modal__video {
+  max-width: 200px;
+}
+
+.modal__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.modal__text {
+  margin-top: 5px;
+}
+
+.modal__button {
+  padding: 10px 20px;
 }
 
 @media (prefers-color-scheme: light) {
