@@ -54,9 +54,7 @@ function startGame() {
           const letters = [...lettersBox.children];
           word.split('').forEach((letter, index) => {
             if (letter === guessedLetter) {
-              lettersBox.children[index].classList.add(
-                'letter-box__letter_guessed'
-              );
+              letters[index].classList.add('letter-box__letter_guessed');
             }
           });
 
@@ -91,10 +89,4 @@ function startGame() {
 
 const wordBox = startGame();
 
-function resetGame() {
-  const appBox = wordBox.parentElement;
-  wordBox.remove();
-  appBox.append(startGame());
-}
-
-export { wordBox, resetGame };
+export default wordBox;
