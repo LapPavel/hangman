@@ -30,9 +30,7 @@ export default class Modal {
     modalVideo.classList.add('modal__video');
     modalVideo.setAttribute('src', `${this.isWon ? videoWon : videoLose}`);
     modalVideo.setAttribute('playsinline', '');
-    modalVideo.setAttribute('autoplay', '');
     modalVideo.setAttribute('loop', '');
-    modalVideo.setAttribute('muted', '');
     return modalVideo;
   }
 
@@ -62,5 +60,6 @@ export default class Modal {
   open(word) {
     this.modalText.textContent = `${this.isWon ? 'You guessed the word:' : 'The correct word was:'} ${word}`;
     this.modalWindow.showModal();
+    this.modalVideo.play();
   }
 }
