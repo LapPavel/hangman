@@ -109,8 +109,10 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
-.modal__video {
+.modal__lottie {
   max-width: 200px;
+  height: auto;
+  margin: auto;
 }
 
 .modal__title {

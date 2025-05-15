@@ -2,7 +2,7 @@ import createKeys from './alphabet';
 import { gallowsSVG } from './gallowsBox';
 import wordList from './worldList';
 import manFunction from './man';
-import showModal from './modal';
+import { openModal } from './modal';
 
 function startGame() {
   const getRandomInt = (max) => Math.floor(Math.random() * max);
@@ -62,9 +62,7 @@ function startGame() {
             letter.classList.contains('letter-box__letter_guessed')
           );
           if (hasWordGuessed) {
-            const modal = showModal(true, word);
-            wordContainer.parentElement.append(modal);
-            modal.showModal();
+            openModal(true, word);
             attempt = 6;
           }
         } else {
@@ -74,9 +72,7 @@ function startGame() {
           attempt += 1;
           updateAttempt();
           if (attempt === 6) {
-            const modal = showModal(false, word);
-            wordContainer.parentElement.append(modal);
-            modal.showModal();
+            openModal(false, word);
           }
         }
         event.target.setAttribute('disabled', '');
