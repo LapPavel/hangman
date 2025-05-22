@@ -21,6 +21,6 @@
     "vite": "^6.3.5"
   },
   "dependencies": {
-    "@aarsteinmedia/dotlottie-player-light": "^5.2.6"
+    "@aarsteinmedia/dotlottie-player-light": "^5.2.13"
   }
 }
